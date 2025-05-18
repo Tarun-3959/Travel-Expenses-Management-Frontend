@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Segoe UI", sans-serif;
+  height: 94vh;
+  background: url("../assets/bg_second.jpg") no-repeat center center/cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  backdrop-filter: brightness(0.9);
+}
+
+.container h1 {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  color: #5d8a81;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  color: rgb(61, 57, 52);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #5d8a81;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  background-color: #c7b0b0;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
