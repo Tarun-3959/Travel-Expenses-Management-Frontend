@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+/*
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-html,
-body {
-  display: grid;
-  height: 100%;
+  */
+
+.body {
   width: 100%;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   place-items: center;
   background: url("../assets/bg_second.jpg") no-repeat center center/cover;
 }
@@ -18,9 +22,11 @@ body {
   color: #fff;
 }
 .wrapper {
+  margin-bottom: -65px;
   overflow: hidden;
   max-width: 390px;
   background: #fff;
+  opacity: 0.9;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
@@ -34,7 +40,6 @@ body {
   font-size: 35px;
   font-weight: 600;
   text-align: center;
-  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .slide-controls {
   position: relative;
@@ -57,7 +62,6 @@ body {
   line-height: 48px;
   cursor: pointer;
   z-index: 1;
-  transition: all 0.6s ease;
 }
 .slide-controls label.signup {
   color: #000;
@@ -70,7 +74,7 @@ body {
   z-index: 0;
   border-radius: 15px;
   background: -webkit-linear-gradient(left, #efd84c, #e2d05a, #ead860, #efe07e);
-  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 input[type="radio"] {
   display: none;
@@ -101,6 +105,7 @@ input[type="radio"] {
   display: flex;
   width: 200%;
 }
+
 .form-container .form-inner form {
   width: 50%;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -123,7 +128,7 @@ input[type="radio"] {
 }
 .form-inner form .field input:focus {
   border-color: #efd84c;
-  /* box-shadow: inset 0 0 3px #fb6aae; */
+  box-shadow: inset 0 0 3px #fb6aae;
 }
 .form-inner form .field input::placeholder {
   color: #999;
@@ -154,30 +159,41 @@ form .btn {
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+  background: #efd84c;
 }
 form .btn .btn-layer {
   height: 100%;
   width: 300%;
   position: absolute;
   left: -100%;
-  background: #efd84c;
   border-radius: 15px;
   transition: all 0.4s ease;
 }
-form .btn:hover .btn-layer {
-  left: 0;
-}
+
 form .btn input[type="submit"] {
-  height: 100%;
+  height: 48px;
+  margin: auto;
   width: 100%;
   z-index: 1;
   position: relative;
   background: none;
   border: none;
   color: #fff;
-  padding-left: 0;
   border-radius: 15px;
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+.btn:hover {
+  background-color: #f8dc28;
+  border-radius: 30px;
+  transition: 0.2s ease;
+}
+
+.wrapper.signup-mode .form-inner {
+  margin-left: -100%;
+}
+
+.wrapper.signup-mode .title-text {
+  margin-left: -100%;
 }
