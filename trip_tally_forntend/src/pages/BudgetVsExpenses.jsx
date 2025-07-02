@@ -96,7 +96,7 @@ function BudgetVsExpenses() {
 
             {/* ✅ Horizontal scroll wrapper */}
             <div className="w-full mr-0.5 overflow-x-auto">
-              <div className="min-w-[600px] h-72">
+              <div className="min-w-[600px] w-fit h-72">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart
                     data={datatwo}
