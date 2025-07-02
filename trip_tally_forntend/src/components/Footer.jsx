@@ -36,7 +36,7 @@ const Footer = () => {
         {/* Right - Social Links */}
         <div className="flex justify-center md:justify-end space-x-4 text-2xl">
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/Tarun-3959"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-300 transition"
@@ -44,7 +44,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/your-linkedin"
+            href="www.linkedin.com/in/tarun-kushwaha-kushwaha-697a01344"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition"
