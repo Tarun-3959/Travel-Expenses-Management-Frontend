@@ -136,7 +136,11 @@ const tripSlice = createSlice({
     categories: [],
     categoryError: null,
   },
-  reducers: {},
+  reducers: {
+    clearTrips: (state) => {
+      (state.trips = []), (state.categories = []);
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchData.pending, (state) => {
@@ -204,5 +208,7 @@ const tripSlice = createSlice({
       });
   },
 });
+
+export const { clearTrips } = tripSlice.actions;
 
 export default tripSlice.reducer;

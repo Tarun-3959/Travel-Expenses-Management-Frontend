@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { logout } from "../slices/authSlice";
+import { clearTrips } from "../slices/tripSlice";
 NavLink;
 function Navbaar() {
   const dispatch = useDispatch();
@@ -46,6 +47,7 @@ function Navbaar() {
           <li>
             <button
               onClick={() => {
+                dispatch(clearTrips());
                 dispatch(logout());
               }}
               className="sm:px-4 sm:py-2 sm:text-[1rem] rounded-2xl px-2 py-1 text-[13px] border-2 border-solid border-[#5d8a81]  text-white font-bold hover:bg-[#5d8a81] "
